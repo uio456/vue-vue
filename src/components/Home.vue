@@ -1,7 +1,7 @@
 <template>
   <div class>
     <h1>{{ msg }}</h1>
-    <a href="">Home</a>
+    <a href="">Hello world</a>
   </div>
 </template>
 
@@ -10,11 +10,12 @@ export default {
   name: "HelloWorld",
   data: function() {
     return {
-      msg: "Hello World"
+      msg: "Home"
     };
   }
 };
 </script>
 
+<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 </style>
