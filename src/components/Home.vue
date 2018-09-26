@@ -1,7 +1,8 @@
 <template>
   <div class>
     <h1>{{ msg }}</h1>
-    <a href="">Hello world</a>
+    <!-- <router-link :to="{name:'HelloWorld'}">Hello world</router-link> -->
+    <a href="" @click.prevent="toWorld">Hello World</a>
   </div>
 </template>
 
@@ -12,6 +13,11 @@ export default {
     return {
       msg: "Home"
     };
+  },
+  methods: {
+    toWorld: function() {
+      this.$router.push('/hello_world');
+    }
   }
 };
 </script>
