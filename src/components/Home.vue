@@ -3,6 +3,7 @@
     <h1>{{ msg }}</h1>
     <!-- <router-link :to="{name:'HelloWorld'}">Hello world</router-link> -->
     <a href="" @click.prevent="toWorld">Hello World</a>
+    <a href="" @click.prevent="toMessage">Message</a>
   </div>
 </template>
 
@@ -17,6 +18,9 @@ export default {
   methods: {
     toWorld: function() {
       this.$router.push('/hello_world');
+    },
+    toMessage: function() {
+      this.$router.push('/message');
     }
   }
 };
